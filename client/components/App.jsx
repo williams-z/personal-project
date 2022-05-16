@@ -6,17 +6,19 @@ import PingRoutes from './PingRoutes'
 import Registration from './Registration'
 import Users from './Users'
 import { Routes, Route } from 'react-router-dom'
+import Header from './Header'
 
 function App() {
   cacheUser(useAuth0)
 
   return (
     <div className="app">
+      <Header />
       <Routes>
-        <Route path="/" element={<Nav />} />
+        {/* <Route path="/" element={<Nav />} />
         <Route path="/" element={<Users />} />
         <Route path="/" element={<PingRoutes />} />
-        <Route path="/profile" element={<Registration />} />
+        <Route path="/profile" element={<Registration />} /> */}
       </Routes>
     </div>
   )
