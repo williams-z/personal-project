@@ -15,8 +15,8 @@ Header
 }
 
 .nav-center {
-  width: 100%;
-  max-width: 100%;
+  width: 425px;
+  max-width: 100vw;
   // border: 1px solid red;
   background-color: #EDEDED ;
 }
@@ -49,12 +49,12 @@ Nav Overlay
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
+  max-width: 425px;
 }
 
 .overlay { 
   height: 0;
-  width: 100vw;
+  // width: 100vw;
   // position: fixed;
   z-index: 1; 
   left: 0;
@@ -63,7 +63,7 @@ Nav Overlay
   background-color: rgba(0,0,0, 0.5); 
   overflow-x: hidden; 
   transition: 0.5s; 
-  padding-right: 10vh;
+  // padding-right: 10vh;
 
   &--open {
     height: 100vh;
@@ -73,8 +73,9 @@ Nav Overlay
 
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  text-decoration-color: red;
+  margin-top: 30px; 
 }
